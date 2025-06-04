@@ -47,8 +47,8 @@ interface Config {
   apiUrl: string;
   baseUrl: string;
   dbUrl: string;
-  jwtSecret: string;
-  jwtExpiration: string;
+  accessTokenSecret: string;
+  refreshTokenSecret: string;
   logLevel: string;
   corsOrigin: string;
   apiPrefix: string;
@@ -70,8 +70,8 @@ const config: Config = {
   apiUrl: process.env.API_URL || "http://localhost:3000",
   baseUrl: process.env.BASE_URL || "http://localhost:3000",
   dbUrl: process.env.DB_URL || "mongodb://localhost:27017/myapp",
-  jwtSecret: process.env.JWT_SECRET || "your_jwt-secret",
-  jwtExpiration: process.env.JWT_EXPIRATION || "1h",
+  accessTokenSecret: process.env.ACCESS_TOKEN_SECRET || "your_jwt-secret",
+  refreshTokenSecret: process.env.REFRESH_TOKEN_SECRET || "1h",
   logLevel: process.env.LOG_LEVEL || "info",
   corsOrigin: process.env.CORS_ORIGIN || "*",
   apiPrefix: process.env.API_PREFIX || "/api",
