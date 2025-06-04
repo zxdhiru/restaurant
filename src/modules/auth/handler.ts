@@ -1,0 +1,10 @@
+// handleLogin
+// handleLogout
+// handleRegister
+// handleUpdateProfile
+// handleDeleteAccount
+// handleForgotPassword
+// handleResetPassword
+// handleGetProfile
+// handleGetUsers
+// handleGoogleLogin
